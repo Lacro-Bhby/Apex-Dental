@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Booking | Apex Dental</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="logo">🦷 ApexDental</a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="doctors.html" class="nav-link">Doctors</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Book Now</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">☰</div>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1>Book Your Appointment</h1>
+      <p>Schedule your visit today or get in touch with our front office team.</p>
+    </div>
+  </div>
+
+  <section class="section-padding">
+    <div class="container contact-wrapper">
+      <!-- Booking Form -->
+      <form class="contact-form" id="appointmentForm">
+        <h2 style="margin-bottom: 20px;">Schedule Visit</h2>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" class="form-control" placeholder="e.g. John Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" class="form-control" placeholder="name@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="service">Select Service</label>
+          <select id="service" class="form-control" required>
+            <option value="">Choose a treatment...</option>
+            <option value="checkup">General Checkup</option>
+            <option value="whitening">Teeth Whitening</option>
+            <option value="implant">Dental Implant</option>
+            <option value="orthodontics">Orthodontics</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Confirm Booking</button>
+      </form>
+
+      <!-- Location & Info -->
+      <div>
+        <h2 style="margin-bottom: 20px;">Contact Information</h2>
+        <p style="margin-bottom: 15px;">📍 123 Healthcare Blvd, Medical District, Suite 400</p>
+        <p style="margin-bottom: 15px;">📞 Phone: +1 (555) 234-5678</p>
+        <p style="margin-bottom: 15px;">✉️ Email: contact@apexdental.com</p>
+        
+        <h3 style="margin: 30px 0 15px;">Working Hours</h3>
+        <p style="color: var(--text-muted);">Monday – Friday: 08:00 AM – 07:00 PM</p>
+        <p style="color: var(--text-muted);">Saturday: 09:00 AM – 04:00 PM</p>
+        <p style="color: var(--text-muted);">Sunday: Closed</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p>&copy; 2026 ApexDental Clinic. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
